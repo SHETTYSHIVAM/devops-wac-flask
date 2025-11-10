@@ -14,23 +14,19 @@
       <form action="/signup" method="POST">
         <h1>Sign Up</h1>
         {% if error %}
-        <div class="error">{{error}}</div>
-        {%endif%}
-        <div class="small-container">
+        <div class="error">{{ error }}</div>
+        {% endif %}
+        <div>
           <label for="email">Email</label>
           <input type="email" id="email" name="email" required />
         </div>
-        <div class="small-container">
+        <div>
           <label for="password">Password</label>
           <input type="password" id="password" name="password" required />
         </div>
-        <div class="small-container">
-          <button type="submit">Sign Up</button>
-        </div>
-        <p>Have an account? <a href="login">login here</a></p>
+        <button type="submit">Sign Up</button>
+        <p>Already have an account? <a href="/login">Login here</a></p>
       </form>
-      
-    </div>
     </div>
   </body>
 </html>
