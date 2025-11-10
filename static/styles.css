@@ -1,0 +1,96 @@
+h1 {
+  font-size: 2rem;
+  margin: 5px;
+}
+
+body {
+  background-color: oklch(12.9% 0.042 264.695);
+  color: white;
+  font-family: "Lucida Sans";
+}
+
+.container{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+input {
+  padding: 8px 12px;
+  margin: 5px;
+  border-radius: 5px;
+}
+
+input:focus {
+  border: 2px solid oklch(79.2% 0.209 151.711);
+  box-shadow: 0 0 6px 1px oklch(79.2% 0.209 151.711);
+}
+
+label {
+  font-weight: bold;
+  margin: 0.5em 0 0.5em 0;
+}
+
+form {
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: space-evenly;
+  background-color: oklch(27.9% 0.041 260.031);
+  border-radius: 20px;
+}
+
+.small-container {
+  margin: 10px;
+  padding: 4px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+button {
+  padding: 8px 12px;
+  border-radius: 8px;
+  background-color: oklch(79.2% 0.209 151.711);
+  font-weight: 700;
+  font-size: 0.9rem;
+  box-shadow: 0 0 6px 1px oklch(79.2% 0.209 151.711);
+  border: 2px solid oklch(79.2% 0.209 151.711);
+}
+
+button:active{
+ box-shadow: 0 0 10px 1px oklch(79.2% 0.209 151.711); 
+}
+
+@keyframes ping {
+  0% {
+    transform: scale(0.5);
+    opacity: 0.75;
+  }
+  60% {
+    opacity: 0.25;
+  }
+  100% {
+    transform: scale(2.5);
+    opacity: 0;
+  }
+}
+
+.home {
+  color: white;
+  font-size: 5rem;
+  animation: ping 5s ease-in 2s infinite;
+}
+
+.error{
+  background-color: oklch(70.216% 0.18922 22.207 / 0.83);
+  padding: 4px;
+  text-align: center;
+  font-size: 0.8rem;
+  border-radius: 5px;
+  border: 2px solid oklch(63.7% 0.237 25.331);
+}
